@@ -1,0 +1,36 @@
+name: bentosmpp
+version: '1.0'
+main: fr.guizmov.bentosmpp.Bentosmpp
+api-version: '1.21'
+authors: [ Guizmov ]
+commands:
+  heal:
+      description: "Permet de se soigner !"
+      permission: "bsmp.heal"
+      permission-message: "§3[BSMP] §cVous n'avez pas la permission d'executer cette commande."
+  feed:
+      description: "Ne plus avoir faim !"
+      permission: "bsmp.feed"
+      permission-message: "§3[BSMP] §cVous n'avez pas la permission d'executer cette commande."
+  suicide:
+      description: "Se tuer"
+      permission: "bsmp.suicide"
+      permission-message: "§3[BSMP] §cVous n'avez pas la permission d'executer cette commande."
+  kill:
+      description: "Tue un autre joueur"
+      permission: "bsmp.kill"
+      permission-message: "§3[BSMP] §cVous n'avez pas la permission d'executer cette commande."
+  cleareffect:
+      description: "Supprime tout les effets de potions active."
+  broadcast:
+      description: "Envoyez un message global."
+
+permissions:
+  bsmp.heal:
+      default: op
+  bsmp.feed:
+      default: op
+  bsmp.suicide:
+      default: true
+  bsmp.kill:
+      default: op
