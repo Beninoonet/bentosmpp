@@ -22,9 +22,31 @@ commands:
       permission-message: "§3[BSMP] §cVous n'avez pas la permission d'executer cette commande."
   cleareffect:
       description: "Supprime tout les effets de potions active."
+      aliases:
+        - "ce"
+        - "cleareffects"
+      permission: "bsmp.cleareffect"
+      permission-message: "§3[BSMP] §cVous n'avez pas la permission d'executer cette commande."
   broadcast:
       description: "Envoyez un message global."
-
+      aliases:
+        - "br"
+        - "annonce"
+        - "ann"
+      permission: "bsmp.broadcast"
+      permission-message: "§3[BSMP] §cVous n'avez pas la permission d'executer cette commande."
+  message:
+    description: "Envoyez un message privé à un autre joueur."
+    aliases:
+      - "msg"
+      - "w"
+      - "whisper"
+    permission: "bsmp.msg"
+    permission-message: "§3[BSMP] §cVous n'avez pas la permission d'executer cette commande."
+  reply:
+      description: répondre à un message
+      aliases:
+        - "r"
 permissions:
   bsmp.heal:
       default: op
@@ -34,3 +56,5 @@ permissions:
       default: true
   bsmp.kill:
       default: op
+  bsmp.msg:
+      default: true

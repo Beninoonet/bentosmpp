@@ -13,11 +13,11 @@ public class BroadcastCommand implements CommandExecutor {
     public boolean onCommand(@NotNull CommandSender commandSender, @NotNull Command command, @NotNull String s, @NotNull String @NotNull [] args) {
 
         if (args.length == 0) {
-            commandSender.sendMessage("§3[BSMP] §c/broadcast <message>");
+            commandSender.sendMessage("§5[BSMP] §c/broadcast <message>");
         } else {
             String message = Joiner.on(" ").join(args);
             for(Player player : Bukkit.getOnlinePlayers()){
-                player.sendMessage("§3[BSMP] §7§l%s".formatted(message));
+                player.sendMessage("§5[BSMP] §7§l%s".formatted(message));
             }
         }
 
